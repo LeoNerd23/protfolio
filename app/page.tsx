@@ -1,22 +1,17 @@
-import { NavigationMenuDemo } from "@/components/menu";
-import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { ModeToggle } from "@/components/ui/mode-toggle";
+import { AvatarDemo } from "@/components/avatar";
+import { NavigationMenuDesktop } from "@/components/menu-desktop";
+import { MenuMobile } from "@/components/menu-mobile";
 
 export default function MainPage() {
   return (
     <>
-      <header>
+      <header className="max-w-screen-lg m-auto">
         <div className="flex justify-between px-4 py-4 2xl:container m-auto my-0">
-          <NavigationMenuDemo />
-          <ModeToggle />
+          <AvatarDemo />
+          <MenuMobile />
+          <NavigationMenuDesktop />
         </div>
       </header>
-      <main>
-        <div>
-          <Button>Button</Button>
-        </div>
-      </main>
     </>
   );
 }
